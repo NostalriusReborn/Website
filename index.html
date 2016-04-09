@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vanilla.Re</title>
+
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/fav.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+
+    <script type="text/javascript" src="js/navigation.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/logo.png"></a>
+        <nav>
+            <ul>
+                <li class="menu-left"><a href="#">Play <i style="font-size:11px">(disabled)</i></a></li>
+                <li class="menu-left">
+                    <a href="https://vanilla.re/forum">Forum</a>
+                </li>
+                <li class="menu-right"><a href="javascript:void(0)" onclick="">Login <i style="font-size:11px">(disabled)</i></a></li>
+                <li class="menu-right blinker"><a href="https://vanilla.re/forum/viewforum.php?f=3" class="blinker">Nostalrius</a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+
+    <section id="login">
+        <form action="#">
+            <input type="email" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="submit">Login</button>
+            <a href="#" class="register-button">Sign Up</a>
+            <a href="#" class="link forgot-password">Forgot your password?</a>
+        </form>
+    </section>
+
+    <div class="top-margin"></div>
+
+    <section>
+        <div class="slider">
+            <div>
+                <h1>Vanilla.Re</h1>
+                <h2>Nostalrius news about the upcoming shutdown has shocked us all, but instead of leaving the project behind, we are willing to do everything possible to continue our journey together. Checkout our forum for more information.</h2>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span class="copyright">&copy; 2016 Vanilla.Re</span>
+    </footer>
+
+    <script type="text/javascript" src="plugins/jquery/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slider').slick({
+            accessibility: false,
+            autoplay: true,
+            arrows: false,
+          });
+        });
+    </script>
+</body>
+</html>
